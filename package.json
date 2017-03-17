@@ -1,6 +1,6 @@
 {
-	"name": "RNAudioTranscoder",
-	"version": "0.0.1",
+	"name": "react-native-audio-transcoder",
+	"version": "0.0.16",
 	"main": "index.js",
-	"description": ""
+	"description": "Transcode audio natively"
 }

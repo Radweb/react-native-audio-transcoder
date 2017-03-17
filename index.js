@@ -7,6 +7,7 @@ const foo = () => {
 
 const Interface = {
 	foo,
+	RNAudioTranscoder,
 }
 
 module.exports = Interface

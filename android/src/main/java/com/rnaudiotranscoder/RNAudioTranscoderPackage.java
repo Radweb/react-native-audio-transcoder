@@ -8,22 +8,22 @@ import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
-public class RNAudioTranscoderPackage implements ReactPackage {
+public final class RNAudioTranscoderPackage implements ReactPackage {
 
 	@Override
-	public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+	public final List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
 		List<NativeModule> modules = new ArrayList<>();
 		modules.add(new RNAudioTranscoder(reactContext));
 		return modules;
 	}
 
 	@Override
-	public List<Class<? extends JavaScriptModule>> createJSModules() {
+	public final List<Class<? extends JavaScriptModule>> createJSModules() {
 		return Collections.emptyList();
 	}
 
 	@Override
-	public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+	public final List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
 	return Arrays.<ViewManager>asList();
 	}
 }

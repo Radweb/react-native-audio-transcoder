@@ -1,12 +1,15 @@
 buildscript {
 	repositories {
 		jcenter()
+		mavenCentral()
 	}
 
 	dependencies {
 		classpath 'com.android.tools.build:gradle:1.1.3'
 	}
 }
+
+apply plugin: 'idea'
 
 apply plugin: 'com.android.library'
 
@@ -27,4 +30,5 @@ android {
 
 dependencies {
 	compile 'com.facebook.react:react-native:+'
+	compile 'com.writingminds:FFmpegAndroid:0.3.2'
 }
