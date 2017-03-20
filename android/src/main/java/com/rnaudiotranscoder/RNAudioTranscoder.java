@@ -67,22 +67,6 @@ public final class RNAudioTranscoder extends ReactContextBaseJavaModule {
 								public void onSuccess(String s) {
 									promise.resolve(makeMessagePayload(s));
 								}
-
-								@Override
-								public void onProgress(String s) {
-									Log.d(TAG, "PROGRESS");
-									Log.d(TAG, s);
-								}
-
-								@Override
-								public void onStart() {
-									Log.d(TAG, "Started command : ffmpeg " + command);
-								}
-
-								@Override
-								public void onFinish() {
-									Log.d(TAG, "Finished command : ffmpeg "+command);
-								}
 							});
 						} catch (FFmpegCommandAlreadyRunningException e) {
 							promise.reject(e.getMessage());
