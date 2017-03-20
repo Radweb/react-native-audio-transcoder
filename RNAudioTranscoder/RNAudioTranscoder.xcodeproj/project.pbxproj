@@ -1,0 +1,74 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		BFE0FD901E7FD51A00078E96 /* RNAudioTranscoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNAudioTranscoder.m; path = RNAudioTranscoder/RNAudioTranscoder.m; sourceTree = "<group>"; };
+		BFE0FD911E7FD62E00078E96 /* RNAudioTranscoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNAudioTranscoder.h; path = RNAudioTranscoder/RNAudioTranscoder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BFE0FD891E7FD47C00078E96 = {
+			isa = PBXGroup;
+			children = (
+				BFE0FD911E7FD62E00078E96 /* RNAudioTranscoder.h */,
+				BFE0FD901E7FD51A00078E96 /* RNAudioTranscoder.m */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		BFE0FD8A1E7FD47C00078E96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = BFE0FD8D1E7FD47C00078E96 /* Build configuration list for PBXProject "RNAudioTranscoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFE0FD891E7FD47C00078E96;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		BFE0FD8E1E7FD47C00078E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BFE0FD8F1E7FD47C00078E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE0FD8D1E7FD47C00078E96 /* Build configuration list for PBXProject "RNAudioTranscoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE0FD8E1E7FD47C00078E96 /* Debug */,
+				BFE0FD8F1E7FD47C00078E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE0FD8A1E7FD47C00078E96 /* Project object */;
+}
