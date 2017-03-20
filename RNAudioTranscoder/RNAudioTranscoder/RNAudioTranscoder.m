@@ -2,8 +2,10 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTUtils.h>
 #import <React/RCTLog.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "FFmpegWrapper.h"
 
-@implementation RNAudioTranscoder.h
+@implementation RNAudioTranscoder
 
 RCT_EXPORT_MODULE();
 
@@ -12,9 +14,24 @@ RCT_EXPORT_METHOD(
     resolver:(RCTPromiseResolveBlock) resolve
     rejecter: (RCTPromiseRejectBlock) reject
 ) {
+    FFmpegWrapper *ffmpeg = [FFmpegWrapper alloc];
+    NSString *inputPath = obj[@"input"];
+    NSString *outputPath = obj[@"output"];
+    
+    [ffmpeg convertInputPath inputPath: inputPath outputPath: outputPath];
+    
     RCTLogInfo(@"Logging a thing");
     resolve(@"Yuppers");
 }
+
+@end
+
+- void createMP3Format(AudioStreamBasicDescription *format)
+{
+    format->mFormatId = kAudioFormat
+}
+
+- void checkRequiredOptions()
 
 //
 //RCT_EXPORT_METHOD(saveImage:(NSDictionary *)obj
@@ -27,19 +44,19 @@ RCT_EXPORT_METHOD(
 //    NSString *directory = obj[@"directory"];
 //    int width =  [obj[@"width"] intValue];
 //    int height =  [obj[@"height"] intValue];
-//    
+//
 //    // Create NSURL from uri
 //    NSURL *url = [[NSURL alloc] initWithString:imagePath];
-//    
+//
 //    PHFetchResult *result = [PHAsset fetchAssetsWithALAssetURLs:@[url] options:nil];
 //    PHAsset *asset = result.firstObject;
-//    
+//
 //    if (asset) {
 //        PHCachingImageManager *imageManager = [[PHCachingImageManager alloc] init];
-//        
+//
 //        PHImageRequestOptions *option = [PHImageRequestOptions new];
 //        option.synchronous = YES;
-//        
+//
 //        // Request an image for the asset from the PHCachingImageManager.
 //        [imageManager requestImageForAsset:asset targetSize:CGSizeMake(width, height) contentMode:PHImageContentModeAspectFit options:option
 //                             resultHandler:^(UIImage *image, NSDictionary *info)
@@ -52,7 +69,7 @@ RCT_EXPORT_METHOD(
 //             if (![fileManager fileExistsAtPath:imagesPath]) {
 //                 [fileManager createDirectoryAtPath:imagesPath withIntermediateDirectories:NO attributes:nil error:nil];
 //             }
-//             
+//
 //             NSData * binaryImageData;
 //             if([imageType isEqualToString:@"png"]) {
 //                 binaryImageData = UIImagePNGRepresentation(image);
@@ -61,7 +78,7 @@ RCT_EXPORT_METHOD(
 //             }
 //             NSString *imageNameWithExtension = [NSString stringWithFormat:@"%@.%@", imageName, imageType];
 //             [binaryImageData writeToFile:[imagesPath stringByAppendingPathComponent:imageNameWithExtension] atomically:YES];
-//             
+//
 //             NSString * newPath = [imagesPath stringByAppendingPathComponent:imageNameWithExtension];
 //             resolve(newPath);
 //         }

@@ -6,69 +6,334 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BFE0FDB41E7FEA6500078E96 /* RNAudioTranscoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0FDB31E7FEA6500078E96 /* RNAudioTranscoder.m */; };
+		BFE0FDB51E7FEA6500078E96 /* RNAudioTranscoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFE0FDB21E7FEA6500078E96 /* RNAudioTranscoder.h */; };
+		BFE0FDD81E8028E500078E96 /* libFFmpegWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE0FDD31E8028C400078E96 /* libFFmpegWrapper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFE0FDD21E8028C400078E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D95F88D617E8C259000ADE35;
+			remoteInfo = FFmpegWrapper;
+		};
+		BFE0FDD41E8028C400078E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D95F88E617E8C259000ADE35;
+			remoteInfo = FFmpegWrapperTests;
+		};
+		BFE0FDD61E8028D700078E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D95F88D517E8C259000ADE35;
+			remoteInfo = FFmpegWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFE0FDAD1E7FEA6500078E96 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BFE0FDB51E7FEA6500078E96 /* RNAudioTranscoder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		BFE0FD901E7FD51A00078E96 /* RNAudioTranscoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNAudioTranscoder.m; path = RNAudioTranscoder/RNAudioTranscoder.m; sourceTree = "<group>"; };
-		BFE0FD911E7FD62E00078E96 /* RNAudioTranscoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNAudioTranscoder.h; path = RNAudioTranscoder/RNAudioTranscoder.h; sourceTree = "<group>"; };
+		BFE0FDAF1E7FEA6500078E96 /* libRNAudioTranscoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAudioTranscoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE0FDB21E7FEA6500078E96 /* RNAudioTranscoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAudioTranscoder.h; sourceTree = "<group>"; };
+		BFE0FDB31E7FEA6500078E96 /* RNAudioTranscoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAudioTranscoder.m; sourceTree = "<group>"; };
+		BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FFmpegWrapper.xcodeproj; path = ../Submodules/FFmpegWrapper/FFmpegWrapper.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		BFE0FDAC1E7FEA6500078E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE0FDD81E8028E500078E96 /* libFFmpegWrapper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		BFE0FD891E7FD47C00078E96 = {
+		BFE0FDA61E7FEA6500078E96 = {
 			isa = PBXGroup;
 			children = (
-				BFE0FD911E7FD62E00078E96 /* RNAudioTranscoder.h */,
-				BFE0FD901E7FD51A00078E96 /* RNAudioTranscoder.m */,
+				BFE0FDB11E7FEA6500078E96 /* RNAudioTranscoder */,
+				BFE0FDB01E7FEA6500078E96 /* Products */,
+				BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		BFE0FDB01E7FEA6500078E96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0FDAF1E7FEA6500078E96 /* libRNAudioTranscoder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE0FDB11E7FEA6500078E96 /* RNAudioTranscoder */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0FDB21E7FEA6500078E96 /* RNAudioTranscoder.h */,
+				BFE0FDB31E7FEA6500078E96 /* RNAudioTranscoder.m */,
+			);
+			path = RNAudioTranscoder;
+			sourceTree = "<group>";
+		};
+		BFE0FDCE1E8028C300078E96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0FDD31E8028C400078E96 /* libFFmpegWrapper.a */,
+				BFE0FDD51E8028C400078E96 /* FFmpegWrapperTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		BFE0FDAE1E7FEA6500078E96 /* RNAudioTranscoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE0FDB81E7FEA6500078E96 /* Build configuration list for PBXNativeTarget "RNAudioTranscoder" */;
+			buildPhases = (
+				BFE0FDAB1E7FEA6500078E96 /* Sources */,
+				BFE0FDAC1E7FEA6500078E96 /* Frameworks */,
+				BFE0FDAD1E7FEA6500078E96 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE0FDD71E8028D700078E96 /* PBXTargetDependency */,
+			);
+			name = RNAudioTranscoder;
+			productName = RNAudioTranscoder;
+			productReference = BFE0FDAF1E7FEA6500078E96 /* libRNAudioTranscoder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
-		BFE0FD8A1E7FD47C00078E96 /* Project object */ = {
+		BFE0FDA71E7FEA6500078E96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Radweb;
+				TargetAttributes = {
+					BFE0FDAE1E7FEA6500078E96 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
-			buildConfigurationList = BFE0FD8D1E7FD47C00078E96 /* Build configuration list for PBXProject "RNAudioTranscoder" */;
+			buildConfigurationList = BFE0FDAA1E7FEA6500078E96 /* Build configuration list for PBXProject "RNAudioTranscoder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BFE0FD891E7FD47C00078E96;
+			mainGroup = BFE0FDA61E7FEA6500078E96;
+			productRefGroup = BFE0FDB01E7FEA6500078E96 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BFE0FDCE1E8028C300078E96 /* Products */;
+					ProjectRef = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
+				BFE0FDAE1E7FEA6500078E96 /* RNAudioTranscoder */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		BFE0FDD31E8028C400078E96 /* libFFmpegWrapper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFFmpegWrapper.a;
+			remoteRef = BFE0FDD21E8028C400078E96 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFE0FDD51E8028C400078E96 /* FFmpegWrapperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FFmpegWrapperTests.xctest;
+			remoteRef = BFE0FDD41E8028C400078E96 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE0FDAB1E7FEA6500078E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE0FDB41E7FEA6500078E96 /* RNAudioTranscoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFE0FDD71E8028D700078E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FFmpegWrapper;
+			targetProxy = BFE0FDD61E8028D700078E96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		BFE0FD8E1E7FD47C00078E96 /* Debug */ = {
+		BFE0FDB61E7FEA6500078E96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		BFE0FD8F1E7FD47C00078E96 /* Release */ = {
+		BFE0FDB71E7FEA6500078E96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE0FDB91E7FEA6500078E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BFE0FDBA1E7FEA6500078E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFE0FD8D1E7FD47C00078E96 /* Build configuration list for PBXProject "RNAudioTranscoder" */ = {
+		BFE0FDAA1E7FEA6500078E96 /* Build configuration list for PBXProject "RNAudioTranscoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFE0FD8E1E7FD47C00078E96 /* Debug */,
-				BFE0FD8F1E7FD47C00078E96 /* Release */,
+				BFE0FDB61E7FEA6500078E96 /* Debug */,
+				BFE0FDB71E7FEA6500078E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BFE0FDB81E7FEA6500078E96 /* Build configuration list for PBXNativeTarget "RNAudioTranscoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE0FDB91E7FEA6500078E96 /* Debug */,
+				BFE0FDBA1E7FEA6500078E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BFE0FD8A1E7FD47C00078E96 /* Project object */;
+	rootObject = BFE0FDA71E7FEA6500078E96 /* Project object */;
 }
