@@ -9,32 +9,7 @@
 /* Begin PBXBuildFile section */
 		BFE0FDB41E7FEA6500078E96 /* RNAudioTranscoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0FDB31E7FEA6500078E96 /* RNAudioTranscoder.m */; };
 		BFE0FDB51E7FEA6500078E96 /* RNAudioTranscoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFE0FDB21E7FEA6500078E96 /* RNAudioTranscoder.h */; };
-		BFE0FDD81E8028E500078E96 /* libFFmpegWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE0FDD31E8028C400078E96 /* libFFmpegWrapper.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BFE0FDD21E8028C400078E96 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D95F88D617E8C259000ADE35;
-			remoteInfo = FFmpegWrapper;
-		};
-		BFE0FDD41E8028C400078E96 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D95F88E617E8C259000ADE35;
-			remoteInfo = FFmpegWrapperTests;
-		};
-		BFE0FDD61E8028D700078E96 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D95F88D517E8C259000ADE35;
-			remoteInfo = FFmpegWrapper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BFE0FDAD1E7FEA6500078E96 /* CopyFiles */ = {
@@ -53,7 +28,6 @@
 		BFE0FDAF1E7FEA6500078E96 /* libRNAudioTranscoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAudioTranscoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0FDB21E7FEA6500078E96 /* RNAudioTranscoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAudioTranscoder.h; sourceTree = "<group>"; };
 		BFE0FDB31E7FEA6500078E96 /* RNAudioTranscoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAudioTranscoder.m; sourceTree = "<group>"; };
-		BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FFmpegWrapper.xcodeproj; path = ../Submodules/FFmpegWrapper/FFmpegWrapper.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE0FDD81E8028E500078E96 /* libFFmpegWrapper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +46,6 @@
 			children = (
 				BFE0FDB11E7FEA6500078E96 /* RNAudioTranscoder */,
 				BFE0FDB01E7FEA6500078E96 /* Products */,
-				BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,15 +66,6 @@
 			path = RNAudioTranscoder;
 			sourceTree = "<group>";
 		};
-		BFE0FDCE1E8028C300078E96 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BFE0FDD31E8028C400078E96 /* libFFmpegWrapper.a */,
-				BFE0FDD51E8028C400078E96 /* FFmpegWrapperTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,7 +80,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BFE0FDD71E8028D700078E96 /* PBXTargetDependency */,
 			);
 			name = RNAudioTranscoder;
 			productName = RNAudioTranscoder;
@@ -149,35 +111,12 @@
 			mainGroup = BFE0FDA61E7FEA6500078E96;
 			productRefGroup = BFE0FDB01E7FEA6500078E96 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BFE0FDCE1E8028C300078E96 /* Products */;
-					ProjectRef = BFE0FDCD1E8028C300078E96 /* FFmpegWrapper.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BFE0FDAE1E7FEA6500078E96 /* RNAudioTranscoder */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BFE0FDD31E8028C400078E96 /* libFFmpegWrapper.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFFmpegWrapper.a;
-			remoteRef = BFE0FDD21E8028C400078E96 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BFE0FDD51E8028C400078E96 /* FFmpegWrapperTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = FFmpegWrapperTests.xctest;
-			remoteRef = BFE0FDD41E8028C400078E96 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFE0FDAB1E7FEA6500078E96 /* Sources */ = {
@@ -189,14 +128,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BFE0FDD71E8028D700078E96 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FFmpegWrapper;
-			targetProxy = BFE0FDD61E8028D700078E96 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BFE0FDB61E7FEA6500078E96 /* Debug */ = {
@@ -332,6 +263,7 @@
 				BFE0FDBA1E7FEA6500078E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
