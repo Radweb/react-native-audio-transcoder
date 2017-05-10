@@ -1,3 +1,0 @@
-[submodule "Submodules/FFmpegWrapper"]
-	path = Submodules/FFmpegWrapper
-	url = https://github.com/OpenWatch/FFmpegWrapper.git
