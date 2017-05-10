@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "81A0005A40A9393C1CC600CF6665A094EB89AAE5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "81A0005A40A9393C1CC600CF6665A094EB89AAE5" : 9223372036854775807,
+    "5E27CBA41412F60913279722722593371D861B06" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "196699BE-B2B3-49F0-AC56-1BBC6166462C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "81A0005A40A9393C1CC600CF6665A094EB89AAE5" : "rnat\/",
+    "5E27CBA41412F60913279722722593371D861B06" : "rnat\/Submodules\/FFmpegWrapper\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RNAudioTranscoder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RNAudioTranscoder\/RNAudioTranscoder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OpenWatch\/FFmpegWrapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E27CBA41412F60913279722722593371D861B06"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Radweb\/react-native-audio-transcoder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81A0005A40A9393C1CC600CF6665A094EB89AAE5"
+    }
+  ]
+}
