@@ -1,6 +1,6 @@
 {
 	"name": "react-native-audio-transcoder",
-	"version": "0.1.2",
+	"version": "0.3.0",
 	"main": "index.js",
 	"description": "Transcode audio natively",
 	"author": "Louis Capitanchik <louis@radweb.co.uk>",

@@ -17,6 +17,7 @@ public final class RNAudioTranscoderPackage implements ReactPackage {
 		return modules;
 	}
 
+	// Deprecated in RN 0.47
 	public final List<Class<? extends JavaScriptModule>> createJSModules() {
 		return Collections.emptyList();
 	}
