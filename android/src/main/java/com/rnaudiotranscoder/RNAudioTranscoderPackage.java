@@ -17,7 +17,6 @@ public final class RNAudioTranscoderPackage implements ReactPackage {
 		return modules;
 	}
 
-	@Override
 	public final List<Class<? extends JavaScriptModule>> createJSModules() {
 		return Collections.emptyList();
 	}
