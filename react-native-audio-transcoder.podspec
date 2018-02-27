@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author             = "Radweb"
   s.source       = { :git => "https://github.com/Radweb/react-native-audio-transcoder.git", :tag => "#{s.version}" }
   s.source_files  = "RNAudioTranscoder/RNAudioTranscoder"
-  s.framework = "AVMediaFoundation"
+  s.framework = "AVFoundation"
   s.dependency "React"
   
   s.platform     = :ios, "8.0"
