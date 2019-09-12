@@ -1,5 +1,5 @@
 {
-	"name": "readweb-react-native-audio-transcoder",
+	"name": "radweb-react-native-audio-transcoder",
 	"version": "0.5.2",
 	"main": "index.js",
 	"description": "Transcode audio natively",
