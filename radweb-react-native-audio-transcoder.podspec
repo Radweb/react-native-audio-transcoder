@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "@radweb/react-native-audio-transcoder"
-  s.version      = "0.5.1"
+  s.name         = "radweb-react-native-audio-transcoder"
+  s.version      = "0.5.2"
   s.summary      = "Transcode audio format in react-native"
   s.description  = <<-DESC
     Transcode audio format in react-native
