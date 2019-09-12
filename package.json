@@ -7,5 +7,6 @@
 		"Louis Capitanchik <louis@radweb.co.uk>",
 		"Wade Urry <wade@radweb.co.uk>"
 	],
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"private": false
 }
