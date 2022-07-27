@@ -29,6 +29,6 @@ android {
 }
 
 dependencies {
-	compile 'com.facebook.react:react-native:+'
-	compile 'com.writingminds:FFmpegAndroid:0.3.2'
+	implementation 'com.facebook.react:react-native:+'
+	implementation 'com.writingminds:FFmpegAndroid:0.3.2'
 }
