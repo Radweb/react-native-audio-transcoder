@@ -87,7 +87,10 @@ public final class RNAudioTranscoder extends ReactContextBaseJavaModule {
 	}
 
 	private final String[] createFFmpegCommand(final String input, final String output) {
-		return String.format(COMMAND_FORMAT, input, output).split(" ");
+		String[] commandParts = COMMAND_FORMAT.split(" ");
+		commandParts[1] = input;
+		commandParts[6] = output;
+		return commandParts;
 	}
 
 	private final Optional<String> checkRequiredOptions(final ReadableMap options) {
